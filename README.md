@@ -8,4 +8,9 @@ using this dataset from Kaggle (https://www.kaggle.com/datasets/fareselmenshawii
 
 ### Creating container
 
-    docker run -p 8888:8888 --name my-jupyter-container facedetection
+    docker run -it -p 8888:8888 `
+
+-v "C:\Users\Aadil\Desktop\FaceDetection\app:/app" `  -v "C:\Users\Aadil\Desktop\FaceDetection\fd_dataset:/app/fd_dataset"`
+facedetection
+
+This is so changes on docker web file are also made on local version
